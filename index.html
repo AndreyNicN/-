@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATDIGIT AI Video Generation Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-bg': '#2A2139',
+              'surface': '#241B2F',
+              'surface-light': '#3A2B4E',
+              'primary': '#FF6AC1',
+              'primary-hover': '#f05ab1',
+              'accent-green': '#A9DC76',
+              'accent-green-hover': '#97c569',
+              'accent-orange': '#F78C6C',
+              'accent-orange-hover': '#f67b5b',
+              'text-main': '#e5e7eb',
+              'text-secondary': '#7E6A88',
+              'selection': '#392A4A',
+              'red': '#F44336',
+            },
+            animation: {
+              'gradient-x':'gradient-x 5s ease infinite',
+            },
+            keyframes: {
+              'gradient-x': {
+                '0%, 100%': {
+                  'background-size':'200% 200%',
+                  'background-position': 'left center'
+                },
+                '50%': {
+                  'background-size':'200% 200%',
+                  'background-position': 'right center'
+                }
+              },
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-bg text-text-main">
+    <div id="root"></div>
+  </body>
+</html>

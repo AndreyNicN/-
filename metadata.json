@@ -1,0 +1,5 @@
+{
+  "name": "Copy of AI Video Generation Studio",
+  "description": "An advanced web application to generate and compare videos from text prompts using different AI models like Google's VEO 2 and OpenAI's Sora 2. Features a side-by-side comparison interface and model-specific configurations.",
+  "requestFramePermissions": []
+}
